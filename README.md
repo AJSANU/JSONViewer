@@ -10,7 +10,7 @@ A beautiful, modular platform of JSON tools. Starts with **Twist JSON Viewer** �
 - Dark mode, Tailwind UI, Framer Motion, lucide icons
 - Routing: Home (cards) → Viewer page
 
-## 🚀 Quickstart
+## Quickstart
 
 ```bash
 pnpm create vite twist-json-suite --template react-ts
@@ -28,7 +28,7 @@ pnpm install
 pnpm dev
 ```
 
-## 📦 Tech
+## Tech
 - Vite, React 18, TypeScript
 - Tailwind CSS
 - React Router
@@ -38,7 +38,7 @@ pnpm dev
 - lucide-react
 - Minimal shadcn-like UI wrappers in `src/components/ui/*`
 
-## 🧭 Structure
+## Structure
 
 ```text
 src/
