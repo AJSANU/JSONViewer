@@ -131,9 +131,9 @@ export default function JsonViewerPage() {
         </button>
 
         {/* PREMIUM PANEL TOGGLES */}
-        <button className="pretty-btn-outline" onClick={() => setShowJson((v) => !v)}>
+        <button className="pretty-btn" onClick={() => setShowJson((v) => !v)}>
           {showJson ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
-          {showJson ? "Hide JSON" : "Show JSON"}
+          {showJson ? "JSON" : "JSON"}
         </button>
 
         {/* PREMIUM PANEL TOGGLES 
