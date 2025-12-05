@@ -43,7 +43,7 @@ export default function JsonViewerPage() {
 
   // toggles
   const [showJson, setShowJson] = useState(true)
-  const [showGraph, setShowGraph] = useState(true)
+  const [showGraph, setShowGraph] = useState(false)
 
   // data state
   const [jsonText, setJsonText] = useState(stringifyPretty(SAMPLE))
@@ -136,10 +136,12 @@ export default function JsonViewerPage() {
           {showJson ? "Hide JSON" : "Show JSON"}
         </button>
 
+        {/* PREMIUM PANEL TOGGLES 
         <button className="pretty-btn-outline" onClick={() => setShowGraph((v) => !v)}>
           {showGraph ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
           {showGraph ? "Hide Graph" : "Show Graph"}
         </button>
+        */}
 
         {/* THEME SWITCH → Keep ShadCN Button */}
         <div className="ml-auto flex items-center gap-2">
