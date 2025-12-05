@@ -1,0 +1,112 @@
+/* -----------------------------------------------------
+   BASE PREMIUM THEME
+------------------------------------------------------ */
+:root {
+  --bg: #fafafa;
+  --fg: #1a1a1a;
+  --card-bg: rgba(255, 255, 255, 0.7);
+  --border-color: rgba(0, 0, 0, 0.08);
+  --radius: 16px;
+}
+
+.dark {
+  --bg: #0d0d0d;
+  --fg: #f0f0f0;
+  --card-bg: rgba(20, 20, 20, 0.6);
+  --border-color: rgba(255, 255, 255, 0.1);
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  transition: background 0.3s ease, color 0.3s ease;
+  font-smooth: always;
+}
+
+/* -----------------------------------------------------
+   PREMIUM CARDS (Glass)
+------------------------------------------------------ */
+.premium-card {
+  background: var(--card-bg);
+  backdrop-filter: blur(14px) saturate(140%);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  padding: 1rem;
+  box-shadow: 0 4px 35px rgba(0,0,0,0.08);
+  transition: all 0.25s ease;
+}
+
+.premium-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 45px rgba(0,0,0,0.12);
+}
+
+/* -----------------------------------------------------
+   PREMIUM BUTTONS
+------------------------------------------------------ */
+.pretty-btn {
+  @apply px-4 py-2 font-medium rounded-xl inline-flex items-center gap-2 transition-all duration-200 shadow;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+  border: none;
+}
+
+.pretty-btn:hover {
+  transform: translateY(-1px) scale(1.02);
+  box-shadow: 0 8px 32px rgba(139,92,246,0.4);
+}
+
+.pretty-btn:active {
+  transform: scale(0.98);
+}
+
+/* Outline version */
+.pretty-btn-outline {
+  @apply px-4 py-2 rounded-xl font-medium inline-flex items-center gap-2 transition-all duration-200;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--border-color);
+  color: var(--fg);
+}
+
+.pretty-btn-outline:hover {
+  background: rgba(255,255,255,0.12);
+  transform: translateY(-1px);
+}
+
+/* -----------------------------------------------------
+   INPUT
+------------------------------------------------------ */
+.premium-input {
+  @apply px-3 py-2 w-full rounded-xl outline-none transition-all duration-200;
+  background: rgba(255,255,255,0.55);
+  border: 1px solid var(--border-color);
+}
+
+.dark .premium-input {
+  background: rgba(30,30,30,0.7);
+}
+
+.premium-input:focus {
+  border-color: #818cf8;
+  box-shadow: 0 0 0 3px rgba(129,140,248,0.25);
+}
+
+/* -----------------------------------------------------
+   ANIMATIONS
+------------------------------------------------------ */
+.animate-fade-in {
+  animation: fadeIn 0.35s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Panel headers */
+.section-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  opacity: 0.9;
+  margin-bottom: 0.4rem;
+}
