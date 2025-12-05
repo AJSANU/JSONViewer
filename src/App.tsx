@@ -11,7 +11,7 @@ export default function App() {
     <div className="min-h-screen">
       <header className="sticky top-0 z-20 backdrop-blur bg-black/30 border-b border-white/10">
         <div className="max-w-7xl mx-auto px-4 py-3 flex items-center gap-4">
-          <NavLink to="/" className="text-lg font-semibold tracking-tight">AJ JSON Viewer</NavLink>
+          <NavLink to="/" className="text-lg font-semibold tracking-tight">Spectra JSON Studio</NavLink>
           <nav className="hidden md:flex items-center gap-4 text-sm opacity-80">
             <NavLink to="/" className={({isActive})=> isActive? 'underline' : ''}>Home</NavLink>
             <NavLink to="/viewer" className={({isActive})=> isActive? 'underline' : ''}>JSON Viewer</NavLink>
