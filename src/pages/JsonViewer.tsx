@@ -167,13 +167,13 @@ export default function JsonViewerPage() {
         </div>
 
         <div className="premium-card animate-fade-in">
-          <div className="section-title">Insights</div>
-          <JsonInsights insights={insights} />
+          <div className="section-title">JSONPath</div>
+          <JsonPathPanel data={data} onResultIds={setJsonPathResultIds} />
         </div>
 
         <div className="premium-card animate-fade-in">
-          <div className="section-title">JSONPath</div>
-          <JsonPathPanel data={data} onResultIds={setJsonPathResultIds} />
+          <div className="section-title">Insights</div>
+          <JsonInsights insights={insights} />
         </div>
       </div>
 
@@ -181,10 +181,10 @@ export default function JsonViewerPage() {
       {/* JSON TREE (Glass Card) */}
       {/* -------------------------------------------------- */}
       {showJson && (
-        <div className="col-span-12 md:col-span-8 animate-fade-in">
+        <div className="col-span-20 md:col-span-8 animate-fade-in">
           <div className="premium-card h-full">
             <div className="section-title">JSON Tree</div>
-            <div className="max-h-[75vh] overflow-auto pr-1">
+            <div className="max-h-[120vh] overflow-auto pr-1">
               <JsonTree
                 data={data}
                 path={[]}
